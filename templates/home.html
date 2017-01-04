@@ -2,77 +2,102 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Awakening Entertainment</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
-    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.0.0.min.js') }}"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $('.carousel.carousel-slider').carousel({full_width: true});
-            console.log('ceui');
-        });
-    </script>
+    <title>Awakening Intelligence</title>
     <style media="screen">
-        body {
-            font-family: "Myriad Set Pro","Helvetica Neue","Helvetica","Arial",sans-serif;
-            background-color: #f2f2f2;
-        }
-        .footer-more {
-            color: #666;
-            text-decoration: none;
-            border-bottom: 1px solid #e3e3e3;
-            font-size: 1em;
-            font-family: inherit;
-            font-weight: inherit;
-            line-height: inherit;
-            text-align: inherit;
-            box-sizing: content-box;
-            margin: 0;
-            padding: 0;
-            pointer-events: auto;
-            letter-spacing: normal;
-        }
-        .footer-more a {
-            color: rgb(183, 28, 28);
-        }
+    body {
+        margin: 0px;
+        background-color: white;
+        font-family: "Myriad Set Pro","Helvetica Neue","Helvetica","Arial",sans-serif;
+    }
+    /*a.ai-active {
+        background: red;
+    }*/
+    a.ai-nav-item {
+        display: inline-block;
+        color: #ffffff;
+        padding: 10px 50px 10px 0;
+        background-origin: content-box;
+        text-align: center;
+        text-decoration: none;
+    }
+    a.ai-nav-item:hover {
+        color: #cacaca;
+        cursor: pointer;
+    }
+    .ai-nav {
+        background-color: rgba(0, 0, 0, 0.8);
+        font-size: 16px;
+        padding-top: 10px;
+        padding-bottom: 40px;
+    }
+    .container {
+        max-width: 1020px;
+        min-width: 600px;
+        margin: 0 auto;
+    }
+    .ai-content {
+        margin-top: 847px;
+    }
+    .ai-footer {
+        background-color: #f2f2f2;
+        font-size: 11px;
+        padding: 20px 0px;
+    }
+    .ai-footer a {
+        color: #666;
+        text-decoration: none;
+    }
+    .ai-footer-item + .ai-footer-item {
+        border-left: 1px solid #e3e3e3;
+        margin-left: 10px;
+        padding-left: 12px;
+    }
+    .ai-footer a:hover {
+        color: black;
+        text-decoration: underline;
+    }
+    .ai-footer span {
+        color: #999;
+        margin-right: 26px;
+    }
+    .ai-footer-link {
+        margin-top: 6px;
+        padding-top: 5px;
+        padding-bottom: 10px;
+        border-top: 1px solid #e3e3e3;
+    }
     </style>
 </head>
 <body>
-    <nav class="grey darken-4" style="height: 110px;">
+    <div class="ai-nav">
         <div class="container">
-            <div class="nav-wrapper">
-                <a href="#" class="brand-logo">Awakening Intelligence</a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Digital Pathology</a></li>
-                    <li><a href="#">AI</a></li>
-                    <li><a href="#">Solutions</a></li>
-                    <li><a href="#">Research</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <div class="contianer">
-        <div class="carousel carousel-slider" style="height: 838px">
-            <a class="carousel-item" href="#one!"><img src="http://i.imgur.com/5VOiHDo.jpg"></a>
-            <a class="carousel-item" href="#two!"><img src="http://www.hdbloggers.net/wp-content/uploads/2016/08/1080p-Wallpaper.jpg"></a>
-            <a class="carousel-item" href="#three!"><img src="http://www.intrawallpaper.com/static/images/sRh8sKQ.jpg"></a>
-            <a class="carousel-item" href="#four!"><img src="https://wallpaperscraft.com/image/balloon_flight_plant_91681_1920x1080.jpg"></a>
+            <a class="ai-nav-item ai-active" href="#">Awakening Intelligence</a>
+            <a class="ai-nav-item" href="#">Home</a>
+            <a class="ai-nav-item" href="#">About</a>
+            <a class="ai-nav-item" href="#">Digital Pathology</a>
+            <a class="ai-nav-item" href="#">AI</a>
+            <a class="ai-nav-item" href="#">Solutions</a>
+            <a class="ai-nav-item" href="#">Research</a>
+            <a class="ai-nav-item" href="#">Contact</a>
         </div>
     </div>
-    <footer>
-        <div class="container">
-            <div class="footer-more">
-                <p>
-                    More ways to shop: Visit an <a href="#" class="darken-4">Apple Store</a>, call 1-800-MY-APPLE, or <a href="#" class="darken-4">find a reseller</a>.
-                </p>
-            </div>
-            <div class="footer-copyright">
+    <div class="ai-content">
 
+    </div>
+    <div class="ai-footer">
+        <div class="container">
+            <div class="ai-footer-link">
+                <span>Copyright © 2017 Awakening Inc. 保留所有权利。</span>
+                <a class="ai-footer-item" href="#">隐私政策</a>
+                <a class="ai-footer-item" href="#">使用条款</a>
+                <a class="ai-footer-item" href="#">销售政策</a>
+                <a class="ai-footer-item" href="#">法律信息</a>
+                <a class="ai-footer-item" href="#">网站地图</a>
+            </div>
+            <div class="">
+                <a href="#">鲁ICP备17000108号</a>
             </div>
         </div>
-    </footer>
+    </div>
 </body>
 </html>
