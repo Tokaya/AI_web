@@ -43,7 +43,7 @@ def server():
     config = dict(
         debug=True,
         host='',
-        port=3000,
+        port=4000,
     )
     app.run(**config)
 
