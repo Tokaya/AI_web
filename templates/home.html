@@ -1,103 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>Awakening Intelligence</title>
-    <style media="screen">
-    body {
-        margin: 0px;
-        background-color: white;
-        font-family: "Myriad Set Pro","Helvetica Neue","Helvetica","Arial",sans-serif;
-    }
-    /*a.ai-active {
-        background: red;
-    }*/
-    a.ai-nav-item {
-        display: inline-block;
-        color: #ffffff;
-        padding: 10px 50px 10px 0;
-        background-origin: content-box;
-        text-align: center;
-        text-decoration: none;
-    }
-    a.ai-nav-item:hover {
-        color: #cacaca;
-        cursor: pointer;
-    }
-    .ai-nav {
-        background-color: rgba(0, 0, 0, 0.8);
-        font-size: 16px;
-        padding-top: 10px;
-        padding-bottom: 40px;
-    }
-    .container {
-        max-width: 1020px;
-        min-width: 600px;
-        margin: 0 auto;
-    }
-    .ai-content {
-        margin-top: 847px;
-    }
-    .ai-footer {
-        background-color: #f2f2f2;
-        font-size: 11px;
-        padding: 20px 0px;
-    }
-    .ai-footer a {
-        color: #666;
-        text-decoration: none;
-    }
-    .ai-footer-item + .ai-footer-item {
-        border-left: 1px solid #e3e3e3;
-        margin-left: 10px;
-        padding-left: 12px;
-    }
-    .ai-footer a:hover {
-        color: black;
-        text-decoration: underline;
-    }
-    .ai-footer span {
-        color: #999;
-        margin-right: 26px;
-    }
-    .ai-footer-link {
-        margin-top: 6px;
-        padding-top: 5px;
-        padding-bottom: 10px;
-        border-top: 1px solid #e3e3e3;
-    }
-    </style>
-</head>
-<body>
-    <div class="ai-nav">
-        <div class="container">
-            <a class="ai-nav-item ai-active" href="#">Awakening Intelligence</a>
-            <a class="ai-nav-item" href="#">Home</a>
-            <a class="ai-nav-item" href="#">About</a>
-            <a class="ai-nav-item" href="#">Digital Pathology</a>
-            <a class="ai-nav-item" href="#">AI</a>
-            <a class="ai-nav-item" href="#">Solutions</a>
-            <a class="ai-nav-item" href="#">Research</a>
-            <a class="ai-nav-item" href="#">Contact</a>
-        </div>
-    </div>
+{% extends "ai_base.html" %}
+{% block head %}
+  {{ super() }}
+  <style media="screen">
+      /*.main-area {
+          margin-bottom: 340px;
+      }*/
+  </style>
+{% endblock %}
+{% block title %}主页{% endblock %}
+{% block content %}
     <div class="ai-content">
 
     </div>
-    <div class="ai-footer">
-        <div class="container">
-            <div class="ai-footer-link">
-                <span>Copyright © 2017 Awakening Inc. 保留所有权利。</span>
-                <a class="ai-footer-item" href="#">隐私政策</a>
-                <a class="ai-footer-item" href="#">使用条款</a>
-                <a class="ai-footer-item" href="#">销售政策</a>
-                <a class="ai-footer-item" href="#">法律信息</a>
-                <a class="ai-footer-item" href="#">网站地图</a>
-            </div>
-            <div class="">
-                <a href="#">鲁ICP备17000108号</a>
-            </div>
-        </div>
-    </div>
-</body>
-</html>
+{% endblock %}
