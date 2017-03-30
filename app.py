@@ -7,10 +7,8 @@ from models import db
 # 这里 import 具体的 Model 类是为了给 migrate 用
 # 如果不 import 那么无法迁移
 # 这是 SQLAlchemy 的机制
-from models.todo import Todo
-from models.user import User
 
-from routes.todo import main as routes_todo
+from models.user import User
 from routes.home import main as routes_home
 # from routes.admin_views import admin
 # from routes.chest_views import chest
@@ -27,7 +25,6 @@ def configure_app():
     app.secret_key = 'secret key'
     app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///{}'.format(db_path)
     db.init_app(app)
-    app.register_blueprint(routes_todo, url_prefix='/todo')
     app.register_blueprint(routes_home)
 
 

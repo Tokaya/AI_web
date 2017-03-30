@@ -1,34 +1,127 @@
-{% extends "ai_base.html" %}
-{% block head %}
-  {{ super() }}
-  <style media="screen">
-      /*.main-area {
-          margin-bottom: 340px;
-      }*/
-  </style>
-{% endblock %}
-{% block title %}contact{% endblock %}
-{% block content %}
-<div class="section white">
-    <div class="row container" style="margin-bottom:500px;">
-        <div class="col s10">
-            <h1>联系我们</h1>
-            <div class="col s5">
-                <h4>招贤纳士：</h4>
-                <h6>计算机视觉算法工程师</h6>
-                <h6>全栈软件工程师</h6>
-                <h6>病理专业研究生博士生</h6>
-                <h6>病理设备、医疗软件销售经理</h6>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>联系我们</title>
+    <link rel="stylesheet" href="https://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/base.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/common.css')}}">
+    <style type="text/css">
+        .navbar-default .navbar-nav > li > a {
+            border-top: 5px solid #4d2dc3;
+        }
+    </style>
+</head>
+<body style="background: #4D2AC2;">
+    <div>
+        <nav class="navbar navbar-default" role="navigation" style="background: none;border: none; ">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#DeepEye_slide_nav">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                    </a>
+                </div>
+                <!--  Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="DeepEye_slide_nav">
+                    <ul class="nav navbar-nav">
+                        <li><a href="/">我们是谁</a></li>
+                        <li><a href="/member">团队成员</a></li>
+                        <li><a href="#">研究</a></li>
+        		        <li><a href="/contact">联系我们</a></li>
+                        <li><a href="http://deepeye.cc">解决方案</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+
+        <div class="findTalent">
+            <div class="joinUs">
+                <span class="joinUsTop">招贤纳士</span>
+                <br>
+                <span class="joinUsBottom">Join&nbsp; Us</span>
             </div>
-            <div class="col s5">
-                <h4>联系我们：</h4>
-                <h6>商务合作：biz@deepeye.cc</h6>
-                <h6>媒体合作：pr@deepeye.cc</h6>
-                <h6>招贤纳士：hr@deepeye.cc</h6>
-                <h6>电话：021-</h6>
-                <h6>地址：上海市浦东新区博云路111号爱酷空间</h6>
+        </div>
+
+        <div class="icon-position">
+                <h4>logo</h4>
+            <div id="contain">
+                <span class="profess-select">计算机视觉算法工程师</span><br>
+                <span class="profess-select">前端开发工程师</span><br>
+                <span class="profess-select">后端python工程师</span><br>
+                <span class="profess-select">UI设计师</span><br>
+                <span class="profess-select">市场运营</span><br>
+            </div>
+
+        </div>
+
+        <div class="findTalent">
+            <div class="joinUs">
+                <span class="joinUsTop" style="color: #4608ad;">联系我们</span>
+                <br>
+                <span class="joinUsBottom" style="color: #4608ad;">Contact Us</span>
+            </div>
+        </div>
+
+        <div class="contactStyle">
+            <h4>商务合作：biz@deepeye.cc</h4>
+            <h4>媒体合作：pr@deepeye.cc</h4>
+            <h4>招贤纳士：hr@deepeye.cc</h4>
+            <h4>电话：021-88888888</h4>
+            <h4>地址：上海市浦东新区博云路111号爱酷空间</h4>
+        </div>
+    </div>
+    <!--脚部部分-->
+    <div class="footer">
+        <div class="footer1 w">
+            <div class="footer2">
+                <p>Copyright  2017 Awakening lnc. 保留所有权利。隐私政策适用条款 销售政策 法律信息 网站地图</p>
+                <p>鲁ICP备17000108号</p>
             </div>
         </div>
     </div>
-</div>
-{% endblock %}
+
+    <div class="Rect-contact-write">
+        <div class="diamond-contact-write">
+
+        </div>
+    </div>
+    <div class="rotate-purple">
+        <div class="diamond-rotate">
+
+        </div>
+    </div>
+
+    </div>
+    <script type="text/javascript"  src="j{{url_for('static',filename='js/jquery-3.0.0.min.js')}}"></script>
+    <script src="https://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        /*文字的循环播放*/
+        function professScroll(){
+            var container=document.getElementById("contain");
+            container.appendChild(container.firstChild);
+        }
+//        如不设置渐入渐退，可直接使用文字的定时播放，
+//        setInterval("professScroll()",1000);
+
+        /*文字的淡入淡出效果*/
+        var duration = 3000;
+        var startTime = new Date();
+        var p = 0;
+        requestAnimationFrame(function f(){
+            //获取到元素
+            var el = document.querySelector("#contain");
+            var p = ( new Date - startTime ) / duration;
+            el.style.opacity = Math.sin(2 * Math.PI * p);
+            requestAnimationFrame(f);
+        });
+    </script>
+</body>
+</html>
