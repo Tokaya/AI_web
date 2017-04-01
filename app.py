@@ -2,7 +2,6 @@ from flask import Flask
 from flask_migrate import Migrate, MigrateCommand
 from flask_script import Manager
 
-
 from models import db
 # 这里 import 具体的 Model 类是为了给 migrate 用
 # 如果不 import 那么无法迁移
@@ -10,6 +9,7 @@ from models import db
 
 from models.user import User
 from routes.home import main as routes_home
+
 # from routes.admin_views import admin
 # from routes.chest_views import chest
 # from routes.question_views import question
@@ -40,10 +40,9 @@ def server():
     config = dict(
         debug=True,
         host='',
-        port=4000,
+        port=4005,
     )
     app.run(**config)
-
 
 
 def configure_manager():

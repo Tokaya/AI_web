@@ -1,0 +1,410 @@
+.content{
+    width: 80%;
+    margin: 0 auto;
+    /*background-color: red;*/
+}
+.title{
+    /*text-align: center;*/
+    color: #fff;
+    height: 84px;
+    line-height: 84px;
+}
+.title h1{
+    font-size: 12px;
+}
+.title1 p{
+    font-size: 74px;
+}
+.title1 h2{
+    font-size: 40px;
+    font-family: 'gothamregular'
+}
+.title1{
+    margin-bottom: 80px;
+}
+
+.w1{
+    width: 1000px;
+    /*padding-top: 20px;*/
+
+}
+.title1{
+    color: #fff;
+    font-size: 50px;
+    font-weight:700;
+}
+.tab{
+    /*margin-top:100px; */
+    position: relative;
+    margin-bottom: 500px;
+
+
+}
+.tabTitle{
+width: 1000px;
+display: flex;
+justify-content: space-around;
+
+
+}
+.tabTitle .box{
+    width: 200px;
+    height: 200px;
+    background-color: #fffffb;
+    font-size: 30px;
+    border-right:1px solid #ccc;
+    position: relative;
+    transition: all 0.5s;
+}
+
+.tabTitle .box:hover {
+    cursor: pointer;
+}
+.tabTitle  .active{
+    background-color: #4608ad;
+    transition: all 0.5s;
+}
+
+.tabTitle .box:first-child{
+    border-top-left-radius: 2px;
+}
+.tabTitle .box:last-child{
+    border-top-right-radius: 2px;
+    border-right:none
+}
+.tabTitle .box img{
+    width: 81px;
+
+    position: absolute;
+    left: 66px;
+    bottom: 76px;
+}
+.tabTitle .box span{
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-top: 3px solid #ccc;
+    border-right: 3px solid #ccc;
+    position: absolute;
+    left: 90px;
+    bottom: 20px;
+
+}
+.rotate-45{
+    transition: all 0.5s;
+    transform: rotate(-45deg);
+}
+.rotate135{
+    transition: all 0.5s;
+    transform: rotate(135deg)
+}
+.tab .tabContent{
+    width:1000px;
+    display: none;
+    height: 452px;
+    background-color: #4608ad;
+    position: absolute;
+    left: 0px;
+    bottom: -452px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+
+}
+
+
+.tabContent p{
+    font-size: 18px;
+    margin-left: 57px;
+    color: #fff;
+    margin-top: 200px;
+}
+.Carousel{
+    width: 1000px;
+    margin: 0 auto;
+   /*padding-top: 50px;*/
+    color: #fff;
+    margin-bottom: 351px;
+}
+.Carousel .left{
+
+    width: 338px;
+
+
+}
+.Carousel .left h1{
+    font-size:16px;
+    line-height: 20px;
+}
+
+.Carousel .left p{
+    font-size: 36px;
+    font-weight: 700
+}
+
+
+.Carousel .left div{
+    width: 53px;
+    height: 7px;
+    background-color: #fff;
+    margin-top: 22px;
+    margin-bottom: 33px;
+}
+.Carousel .left h2{
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.Carousel .right{
+    weight: 667px;
+    padding-top: 20px;
+}
+
+.Carousel .right .show{
+    width: 667px;
+    height: 257px;
+    border: 1px solid #fff;
+    position: absolute
+}
+.leftbtn{
+    width: 38px;
+    height: 38px;
+    line-height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+     padding-top:15px;
+     padding-left: 4px;
+     position: absolute;
+     right: 100px;
+     bottom: -13px;
+}
+.leftbtn span{
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin: 0 auto;
+    border-bottom:3px solid #4608ad;
+    border-left:3px solid #4608ad;
+    transform: rotate(40deg)
+
+
+}
+
+
+.rightbtn{
+    width: 38px;
+    height: 38px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 50%;
+    padding-top:15px;
+    padding-right: 4px;
+    position: absolute;
+    right: 50px;
+    bottom: -13px;
+}
+.rightbtn span{
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin: 0 auto;
+    border-bottom:3px solid #4608ad;
+    border-left:3px solid #4608ad;
+    transform: rotate(-135deg)
+
+}
+
+.dataShow{
+    width: 1000px;
+    color: #fff;
+    /*height: 300px;*/
+    margin: 0 auto;
+    /*padding-top: 50px;*/
+    /*background-color: red;*/
+    margin-bottom: 432px;
+
+}
+.box2 h1{
+    font-size: 36px;
+}
+.box2 p{
+    font-size: 74px;
+
+}
+.box2 span{
+    color: #3e17a6;
+    font-family:"gothamregular";
+    font-weight: bold;
+}
+
+.strip{
+    width: 428px;
+    height: 5.56px;
+    background-color: #585858;
+    margin-top: 107px;
+
+}
+.strip div{
+    width: 107px;
+    height: 100%;
+    cursor:pointer;
+
+}
+.strip .active{
+    background-color:#4d2dc3;
+}
+.BottomTitle{
+    width: 1000px;
+    margin-bottom: 160px;
+
+    color: #fff;
+}
+.BottomTitle_l{
+    font-family: 'san_francisco_displaysemibold', Tahoma, Arial, sans-serif;
+    font-size: 74px;
+
+}
+.BottomTitle_r{
+  padding-top: 16px;
+    padding-left: 37px;
+
+}
+.BottomTitle_r p{
+    font-size: 26px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bac1{
+    width: 100%;
+    height: 600px;
+    padding-top: 100px;
+    position: absolute;
+    left:0px;
+    top: 642px;
+    overflow: hidden;
+    z-index: -3
+}
+.hr1{
+    width: 3000px;
+    height: 320px;
+    margin-left: -369px;
+    /*border-bottom: 3px solid #4d2dc3;*/
+    background-color: black;
+    transform: rotate(-5deg)
+}
+.footer{
+    min-width: 640px;
+    width: 100%;
+    height: 320px;
+    background-color: black;
+    position: static;
+
+
+}
+.bac2{
+    width: 100%;
+    height: 600px;
+    padding-top: 80px;
+    position: absolute;
+    left: 0px;top:1449px;
+    z-index: -1;
+    overflow: hidden
+}
+.Triangle1{
+    width:0;
+    height:0;
+    border-top:0px solid transparent;
+    border-bottom:531px solid transparent;
+    border-right:2600px solid #4d2dc3;
+    /*border-right:2600px solid peachpuff;*/
+    /*transform: rotate(9deg);*/
+
+}
+.balck{
+    width: 100%;
+    height:900px;
+    background-color: black;
+    position: absolute;
+    left: 0px;
+    top:1530px;
+    z-index: -5;
+
+}
+
+.bac3{
+    width: 100%;
+
+    padding-top: 80px;
+    position: absolute;
+    left: 0px;top:1445px;
+    z-index: -1;
+    overflow: hidden
+}
+
+.Triangle2{
+    width:0;
+    height:0;
+    border-bottom: 1466px solid #4608ad;
+    border-left: 0px solid transparent;
+    border-right: 452px solid transparent;
+    opacity: 0.8;
+    /*transform: rotate(9deg);*/
+}
+
+.bac4{
+
+    height: 1000px;
+    padding-top: 80px;
+    position: absolute;
+    right: 0px;top:1500px;
+    margin-left:100px;
+    z-index: -3;
+    overflow: hidden;
+    padding-left: 30px;
+}
+
+.Triangle3{
+    width: 0;
+    height: 0;
+    border-bottom: 1200px solid #909090;
+    border-left: 0px solid transparent;
+    border-right: 500px solid transparent;
+    transform: rotate(-180deg)
+}
+.bac5{
+    width: 100%;
+    padding-top: 80px;
+    position: absolute;
+    left: 0px;top:2240px;
+    z-index: -3;
+    padding-top: 100px;
+    overflow: hidden;
+    /*margin-left: -30px;*/
+    /*padding-left: 30px;*/
+}
+
+.Triangle4{
+    width: 2500px;
+    height: 500px;
+    background-color: #4d2dc3;
+    transform: rotate(-4deg)
+
+
+}
+.footer{
+
+}

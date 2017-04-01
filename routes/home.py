@@ -9,10 +9,15 @@ def index():
 
 
 @main.route('/member')
-def about():
+def member():
     return render_template('member.html')
 
 
 @main.route('/contact')
 def contact():
     return render_template('contact.html')
+
+
+@main.route('/product')
+def product():
+    return render_template('product.html')

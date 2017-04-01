@@ -1,66 +1,37 @@
-body{
-    background-color: #4834ba;
-    /*max-width: 1903px;*/
 
-}
-.navbar{
-    border-radius: 0px;
-    margin-bottom: 0px;
-}
-.navbar-brand{
-    height: 130px;
-    color: white
-
-}
-.navbar-default{
-  background-color: #4834ba;
-  border:1px solid #4834ba;
-
-}
-
-.navbar-default .navbar-nav > li > a{
-    color: white;
-    height: 130px;
-    line-height: 130px;
-    border-top: 5px solid #4a2dbe;
-
-}
-
-.navbar-default .navbar-nav > li > a:hover{
- color: white;
- border-top: 5px solid #fff;
-}
-.navbar-default .navbar-collapse, .navbar-default .navbar-form{
-    line-height: 130px;
-}
 .content{
     width: 80%;
-    margin: 0 auto;
-    background-color: #4834ba;
-
+    margin: 0 auto;    
+    /*background-color: #4d2dc3;*/
+  
+}
+.content h2{
+    width: 80%;
+    color: white;
+    margin:  0 auto;
+    text-align: center;
 }
 .content h1{
     color: #fff;
-
     text-align: center;
     line-height: 30px;
-
-
+    
+    
 
 }
 .title{
     width: 100%;;
     margin: 0 auto;
     height: 190px;
-    background-color: #4834ba;
+    /*background-color: #4834ba;*/
     margin-top: 10px;
     padding-top: 20px;
-
+ 
 }
 .title div{
     width: 240px;
     margin: 0 auto;
-
+    font-family: 'san_francisco_displaysemibold', Tahoma, Arial, sans-serif;
     font-size: 60px;
     color: #fff;
     margin:  0 auto;
@@ -79,8 +50,8 @@ body{
     text-align: center;
 }
 .circle{
-    width: 100%;
-
+    width: 60%;
+    margin:  0 auto ;
     display: flex;
     justify-content:space-around;
     margin-top: 50px;
@@ -88,17 +59,21 @@ body{
 .circle div{
     width: 157px;
     height: 157px;
+
     border: 1px solid #fff;
     border-radius: 50%;
 }
 
 .SmallTitle{
+    width: 60%;
+    margin: 0 auto;
     margin-top: 30px;
     display: flex;
     justify-content:space-around;
 
 }
 .SmallTitle div{
+    font-family: 'san_francisco_displaysemibold', Tahoma, Arial, sans-serif;
     text-align: center;
     color: #fff;
     font-size: 16px;
@@ -112,12 +87,12 @@ body{
 .title3 h1{
     font-size: 35px;
     font-weight: 700;
-    margin-bottom:30px;
+    margin-bottom:30px; 
 }
 .title3 p{
     font-weight:100;
     color: #fff;
-    font-size: 18px;
+    font-size: 18px; 
     text-align: center
 }
 .o{
@@ -126,7 +101,7 @@ body{
     top: 929px;
     left: 0;
     overflow: hidden
-
+    
 }
 .diamond{
     width: 100%;
@@ -134,14 +109,14 @@ body{
     background-color: #3e17a6;
     opacity: 0.3;
     transform: skew(-81deg);
-
+    
 }
 .footer{
     min-width: 640px;
     width: 100%;
     height: 320px;
     background-color: black;
-
+   
     position: absolute;
     top:1213px;
     left: 0;
@@ -155,7 +130,7 @@ body{
 }
 .footer2{
     width: 60%;
-    height: 150px;
+    height: 150px;    
     background-color: black;
     margin: 0 auto;
     padding-top: 30px;
@@ -166,30 +141,19 @@ body{
     text-align: center;
 }
 
-@media screen and (max-width: 768px) {
- .navbar-default .navbar-nav > li > a{
-    color: white;
-    height: 50px;
-    line-height: 50px;
-
-
-
+.Rect{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    overflow: hidden;
+    z-index: -1;
 }
- .navbar-default .navbar-nav > li > a:hover{
-    background-color: #6b53ca;
-    border: 5px solid #6b53ca
-
-
-
-}
-.navbar-header{
-    height: 80px;
-}
-
-.circle img{
-    width: 120px;
-    height: 120px;
-    border: 1px solid #fff;
-    border-radius: 50%;
-}
+.diamond-1{
+    width: 100%;
+    height: 1250px;
+    background-color: #3e17a6;
+    opacity: 0.3;
+    transform: skew(-40deg);
+    margin-left: -1300px;
 }

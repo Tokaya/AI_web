@@ -1,43 +1,31 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>团队成员</title>
-    <!-- <link rel="stylesheet" href="{{url_for('static',filename='css/base.css')}}"> -->
+    <title>微瞰智能</title>
     <link rel="stylesheet" href="https://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="{{url_for('static',filename='css/base.css')}}">
-    <link rel="stylesheet" href="{{url_for('static',filename='css/common.css')}}">
+    <link rel="stylesheet" href="../static/css/base.css">
+    <link rel="stylesheet" href="../static/css/member.css">
+    <link rel="stylesheet" href="../static/css/common.css">
+    <style>
+        .focus {color: #4608AD;}
+    </style>
 </head>
-<body style="background: #4d2dc3">
-<div>
-    <nav class="navbar navbar-default" role="navigation" style="background: none;border: #4F4CD1;">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#DeepEye_slide_nav">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">
-                </a>
-            </div>
-            <!--  Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="DeepEye_slide_nav">
-                <ul class="nav navbar-nav">
-                    <li><a href="/">我们是谁</a></li>
-                    <li><a href="/member">团队成员</a></li>
-                    <li><a href="#">研究</a></li>
-    		        <li><a href="/contact">联系我们</a></li>
-                    <li><a href="http://deepeye.cc">解决方案</a></li>
-                </ul>
-            </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-    </nav>
 
+<body >
+    <div class="DeepEye_nav w">
+        <div class="logo fl">
+        </div>
+         <ul>
+             <li class='fl'><a href="/">我们是谁</a></li>
+             <li class='fl'><a href="/member">团队成员</a></li>
+             <li class='fl'><a href="/product">主要产品</a></li>
+             <li class='fl'><a href="/contact">联系我们</a></li>
+             <li class='fl'><a href="http://deepeye.cc">解决方案</a></li>
+         </ul>
+    </div>
     <div class="team-number">
         <P class="team-number-text">团队成员</P>
         <div class="explain-ai-content">
@@ -46,7 +34,6 @@
             <span class="explain-ai-bottom">A &nbsp;REAL &nbsp;DIFFERENCE</span>
         </div>
     </div>
-
     <div id="scroll">
         <div class="scroll-left nav nav-tabs " id="scroll-list-show" role="tablist">
             <div class="ceo-show active">
@@ -108,7 +95,6 @@
                         <span>www.51dupian.com联合创始人</span><br>
                         <span>多年互联网医疗创业经验</span><br>
                     </div>
-
                 </div>
             </div>
 
@@ -160,21 +146,37 @@
     </div>
     <div class="Rect">
         <div class="diamond-1">
-
         </div>
     </div>
+
+    <div class="Rect">
+        <div class="diamond-1">
+        </div>
+    </div>
+
     <!--脚部部分-->
     <div class="footer">
-        <div class="footer1 w">
-            <div class="footer2">
+
+            <div class="footer1">
                 <p>Copyright  2017 Awakening lnc. 保留所有权利。隐私政策适用条款 销售政策 法律信息 网站地图</p>
                 <p>鲁ICP备17000108号</p>
             </div>
-        </div>
-    </div>
-</div>
 
-<script type="text/javascript"  src="{{url_for('static',filename='js/jquery-3.0.0.min.js')}}"></script>
-<script src="https://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </div>
+
+    <script type="text/javascript"  src="../static/js/jquery-3.0.0.min.js"></script>
+    <script src="https://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.appellation').click(function(){
+                if ($(this).hasClass('focus')) {
+                    return true;
+                } else {
+                    $('.appellation').removeClass('focus');
+                    $(this).addClass('focus');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
